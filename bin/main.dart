@@ -30,18 +30,21 @@ void simulateOperation(Process process) {
   // 2秒後模擬 user 輸入 "sing"
 
   new Future.delayed(new Duration(seconds: 2), (){
+    print("sing");
     process.stdin.writeln("sing");
   });
 
   // 4秒後模擬 user 輸入 "echo"
 
   new Future.delayed(new Duration(seconds: 4), (){
+    print("sing");
     process.stdin.writeln("echo");
   });
 
   // 5秒後模擬 user 輸入任意文字
 
   new Future.delayed(new Duration(seconds: 5), (){
+    print("sing");
     process.stdin.writeln("test test");
   });
 
